@@ -11,6 +11,7 @@ sprintech/
 ├── main.js          ← Interactions (nav, animations, modal, form)
 ├── assets/
 │   └── logo.png     ← Company logo
+│   └── zed-badge.png← Zed certification
 └── README.md
 ```
 
