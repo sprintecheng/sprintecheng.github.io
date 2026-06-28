@@ -233,13 +233,8 @@ a { color: inherit; text-decoration: none; }
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.value-item {
-  display: flex; gap: 14px; align-items: flex-start;
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-}
+.value-item { display: flex; gap: 14px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 16px; }
+.value-item.wide { grid-column: 1 / -1; }
 .value-num {
   font-family: var(--font-display);
   font-size: 22px; font-weight: 700;
