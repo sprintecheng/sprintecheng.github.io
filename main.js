@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
 // Spec modal
 function openSpec(title, body) {
   document.getElementById('modalTitle').textContent = title;
-  document.getElementById('modalBody').textContent = body;
+  document.getElementById('modalBody').innerHTML = body.split('\n').join('<br>');
   document.getElementById('modalOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
