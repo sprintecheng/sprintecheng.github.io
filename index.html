@@ -3,24 +3,26 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sprintech Engineering — Precision Tools, Dies & Moulds</title>
+  <title>Sprintech Engineering | Press Tools, Dies &amp; Injection Moulds, Nashik</title>
   <meta name="description" content="Sprintech Engineering, Nashik. ISO 9001:2015 certified manufacturers of precision press tools, dies, moulds, jigs and fixtures since 2004. Trusted by leading industries." />
+  <meta name="theme-color" content="#f7f5f2" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
   <!-- NAV -->
   <header class="nav" id="nav">
-    <a href="#home" class="nav-logo">
+    <a href="#home" class="nav-logo" aria-label="Sprintech Engineering, home">
       <img src="assets/logo.png" alt="Sprintech Engineering" class="logo-img" />
     </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
       <span></span><span></span><span></span>
     </button>
-    <nav class="nav-links" id="navLinks">
+    <nav class="nav-links" id="navLinks" aria-label="Main">
       <a href="#about">About</a>
       <a href="#services">Services</a>
       <a href="#machinery">Machinery</a>
@@ -29,37 +31,33 @@
     </nav>
   </header>
 
+  <main id="main">
+
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-bg-lines" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <p class="hero-eyebrow">Nashik · Est. 2004</p>
-      <h1 class="hero-title">
-        Precision <em>Press Tools,<br>Dies & Injection Moulds</em>,<br> built to last.
-      </h1>
-      <p class="hero-tagline">Towards Certainty…</p>
-      <p class="hero-sub">Proudly serving manufacturing industries across India for over 20 years — with quality you can measure to the micron.</p>
-      <div class="hero-actions">
-        <a href="#services" class="btn btn-primary">View our services</a>
-        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    <div class="hero-wrap">
+      <div class="hero-inner">
+        <h1 class="hero-title">Precision <em>press tools, dies &amp; injection moulds</em>, built to last.</h1>
+        <p class="hero-tagline">Towards Certainty…</p>
+        <p class="hero-sub">Proudly serving manufacturing industries across India for over 20 years, with quality you can measure to the micron.</p>
+        <div class="hero-actions">
+          <a href="#services" class="btn btn-primary">View our services</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <ul class="hero-facts">
+          <li><strong>20+</strong> years of expertise</li>
+          <li><strong>10+</strong> CNC &amp; EDM machines</li>
+          <li>Est. 2004, Nashik</li>
+        </ul>
       </div>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num">20+</span><span class="stat-lbl">Years of expertise</span></div>
-        <div class="stat-div"></div>
-        <div class="stat"><span class="stat-num">10+</span><span class="stat-lbl">CNC & EDM machines</span></div>
-      </div>
-    </div>
-    <div class="hero-badge" aria-hidden="true">
-      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="hero-badge" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ISO 9001:2015 quality management system certified, since 2026">
+        <defs><path id="circlePath" d="M 60,10 A 50,50 0 1,1 59.99,10"/></defs>
         <circle cx="60" cy="60" r="56" stroke="#C8392B" stroke-width="1.5" stroke-dasharray="4 3"/>
-        <text font-family="'Barlow Condensed', sans-serif" font-size="11" font-weight="700" fill="#C8392B" text-anchor="middle">
-          <textPath href="#circlePath">QUALITY · PRECISION · RELIABILITY · SINCE 2026 ·</textPath>
+        <text font-family="'Barlow Condensed', sans-serif" font-size="11" font-weight="700" fill="#C8392B">
+          <textPath href="#circlePath" textLength="308" lengthAdjust="spacing">QUALITY · PRECISION · RELIABILITY · SINCE 2026 ·</textPath>
         </text>
-        <defs>
-          <path id="circlePath" d="M 60,10 A 50,50 0 1,1 59.99,10"/>
-        </defs>
-        <text x="60" y="55" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="22" font-weight="700" fill="#1a1a1a">ISO</text>
-        <text x="60" y="74" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="11" fill="#555">Certified</text>
+        <text x="60" y="58" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="14" font-weight="700" fill="#1a1a1a" textLength="68" lengthAdjust="spacingAndGlyphs">ISO 9001:2015</text>
+        <text x="60" y="73" text-anchor="middle" font-family="'Barlow Condensed', sans-serif" font-size="10.5" font-weight="600" fill="#46433f" textLength="56" lengthAdjust="spacingAndGlyphs">QMS Certified</text>
       </svg>
     </div>
   </section>
@@ -68,86 +66,42 @@
   <section class="section about" id="about">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">About us</span>
         <h2 class="section-title">Two decades of precision engineering in Nashik</h2>
       </div>
-      <div class="about-grid">
 
-        <div class="about-card about-card--wide">
-          <div class="about-icon">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="16" r="14" stroke="#C8392B" stroke-width="1.5"/><path d="M10 16l4 4 8-8" stroke="#C8392B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Mission</h3>
-          <p>To deliver precision-engineered press tools, dies, moulds, jigs, fixtures, and precision components to our partners in the automotive, scaffolding, electrical, and valve industries — ensuring zero compromise on quality, on time, every time.</p>
-        </div>
+      <div class="about-mission">
+        <h3 class="sub-title">Mission</h3>
+        <p>To deliver precision-engineered press tools, dies, moulds, jigs, fixtures, and precision components to our partners in the automotive, scaffolding, electrical, and valve industries — ensuring zero compromise on quality, on time, every time.</p>
+      </div>
 
-        <div class="about-card">
-          <div class="about-icon">
-            <svg viewBox="0 0 32 32" fill="none"><circle cx="16" cy="8" r="4" stroke="#C8392B" stroke-width="1.5"/><path d="M8 28c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round"/><path d="M16 16v-4" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Purpose</h3>
+      <div class="about-pv">
+        <div>
+          <h3 class="sub-title">Purpose</h3>
           <p>To engineer certainty into manufacturing, ensuring our clients' production always runs perfectly.</p>
         </div>
-
-        <div class="about-card">
-          <div class="about-icon">
-            <svg viewBox="0 0 32 32" fill="none"><path d="M16 4l2.4 7.2H26l-6.2 4.6 2.4 7.2L16 18.4l-6.2 4.6 2.4-7.2L6 11.2h7.6z" stroke="#C8392B" stroke-width="1.5" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Vision</h3>
+        <div>
+          <h3 class="sub-title">Vision</h3>
           <p>To be the most trusted name in precision tooling and component manufacturing across our core industries.</p>
         </div>
-
-        <div class="about-card about-card--wide">
-          <h3 style="margin-bottom:20px">Core Values</h3>
-          <div class="values-grid">
-            <div class="value-item">
-              <span class="value-num">01</span>
-              <div>
-                <strong>Absolute Certainty <span class="value-sub">(Precision)</span></strong>
-                <p>We measure success in microns. There is no room for error.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <span class="value-num">02</span>
-              <div>
-                <strong>Quality</strong>
-                <p>A zero-defect mindset in everything we manufacture.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <span class="value-num">03</span>
-              <div>
-                <strong>Reliability</strong>
-                <p>Delivering exactly what we promise, whenever it is needed.</p>
-              </div>
-            </div>
-            <div class="value-item">
-              <span class="value-num">04</span>
-              <div>
-                <strong>Expertise</strong>
-                <p>Deeply understanding the technical standards of the industries we serve.</p>
-              </div>
-            </div>
-            <div class="value-item wide">
-              <span class="value-num">05</span>
-              <div>
-                <strong>Integrity & Teamwork</strong>
-                <p>Operating with total honesty and empowering our skilled workforce to build things right.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-card about-card--wide">
-          <div class="about-facts">
-            <div class="fact"><strong>Founded</strong><span>2004</span></div>
-            <div class="fact"><strong>Location</strong><span>MIDC Ambad, Nashik</span></div>
-            <div class="fact"><strong>Specialisation</strong><span>Press Tools, Dies, Moulds, Jigs & Fixtures</span></div>
-            <div class="fact"><strong>Industries served</strong><span>Automotive, Scaffolding, Electrical, Valve</span></div>
-          </div>
-        </div>
-
       </div>
+
+      <div class="about-values">
+        <h3 class="sub-title">Core Values</h3>
+        <dl class="values-list">
+          <div><dt>Absolute Certainty <span>(Precision)</span></dt><dd>We measure success in microns. There is no room for error.</dd></div>
+          <div><dt>Quality</dt><dd>A zero-defect mindset in everything we manufacture.</dd></div>
+          <div><dt>Reliability</dt><dd>Delivering exactly what we promise, whenever it is needed.</dd></div>
+          <div><dt>Expertise</dt><dd>Deeply understanding the technical standards of the industries we serve.</dd></div>
+          <div><dt>Integrity &amp; Teamwork</dt><dd>Operating with total honesty and empowering our skilled workforce to build things right.</dd></div>
+        </dl>
+      </div>
+
+      <dl class="about-facts">
+        <div><dt>Founded</dt><dd>2004</dd></div>
+        <div><dt>Location</dt><dd>MIDC Ambad, Nashik</dd></div>
+        <div><dt>Specialisation</dt><dd>Press Tools, Dies, Moulds, Jigs &amp; Fixtures</dd></div>
+        <div><dt>Industries served</dt><dd>Automotive, Scaffolding, Electrical, Valve</dd></div>
+      </dl>
     </div>
   </section>
 
@@ -155,43 +109,37 @@
   <section class="section services" id="services">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Services provided</span>
         <h2 class="section-title">Manufacturing of precision components</h2>
       </div>
-      <div class="services-grid">
 
-        <div class="service-card">
-          <div class="service-number">01</div>
-          <div class="service-photo service-photo--dies">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="10" y="20" width="60" height="40" rx="5" stroke="#C8392B" stroke-width="2"/>
-              <rect x="20" y="30" width="40" height="20" rx="3" stroke="#C8392B" stroke-width="1.5" stroke-dasharray="3 2"/>
-              <path d="M10 40h60" stroke="#C8392B" stroke-width="1" stroke-dasharray="4 3"/>
-              <circle cx="25" cy="40" r="3" fill="#C8392B" fill-opacity="0.15" stroke="#C8392B" stroke-width="1.5"/>
-              <circle cx="55" cy="40" r="3" fill="#C8392B" fill-opacity="0.15" stroke="#C8392B" stroke-width="1.5"/>
-            </svg>
-          </div>
+      <article class="service">
+        <svg class="service-photo" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="10" y="20" width="60" height="40" rx="5" stroke="#C8392B" stroke-width="2"/>
+          <rect x="20" y="30" width="40" height="20" rx="3" stroke="#C8392B" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <path d="M10 40h60" stroke="#C8392B" stroke-width="1" stroke-dasharray="4 3"/>
+          <circle cx="25" cy="40" r="3" fill="#C8392B" fill-opacity="0.15" stroke="#C8392B" stroke-width="1.5"/>
+          <circle cx="55" cy="40" r="3" fill="#C8392B" fill-opacity="0.15" stroke="#C8392B" stroke-width="1.5"/>
+        </svg>
+        <div>
           <h3>Press Tools and Dies</h3>
           <p>Press tools and stamping dies manufactured to tight tolerances for high-volume sheet-metal production.</p>
           <span class="service-tag">Stamping · Press tools · Blanking</span>
         </div>
+      </article>
 
-        <div class="service-card">
-          <div class="service-number">02</div>
-          <div class="service-photo service-photo--moulds">
-            <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 25 Q40 15 70 25 L70 55 Q40 65 10 55 Z" stroke="#C8392B" stroke-width="2" fill="none"/>
-              <path d="M10 25 Q40 35 70 25" stroke="#C8392B" stroke-width="1.5" stroke-dasharray="3 2"/>
-              <circle cx="40" cy="40" r="8" stroke="#C8392B" stroke-width="1.5" fill="#C8392B" fill-opacity="0.08"/>
-              <path d="M40 25 L40 32M40 48 L40 55" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round"/>
-            </svg>
-          </div>
+      <article class="service">
+        <svg class="service-photo" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M10 25 Q40 15 70 25 L70 55 Q40 65 10 55 Z" stroke="#C8392B" stroke-width="2" fill="none"/>
+          <path d="M10 25 Q40 35 70 25" stroke="#C8392B" stroke-width="1.5" stroke-dasharray="3 2"/>
+          <circle cx="40" cy="40" r="8" stroke="#C8392B" stroke-width="1.5" fill="#C8392B" fill-opacity="0.08"/>
+          <path d="M40 25 L40 32M40 48 L40 55" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        <div>
           <h3>Injection Moulds</h3>
-          <p>Injection moulds designed for plastic components — engineered for dimensional accuracy, consistent output, and long tool life.</p>
+          <p>Injection moulds designed for plastic components, engineered for dimensional accuracy, consistent output, and long tool life.</p>
           <span class="service-tag">Injection moulding</span>
         </div>
-
-      </div>
+      </article>
     </div>
   </section>
 
@@ -199,90 +147,121 @@
   <section class="section machinery" id="machinery">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Machinery available</span>
         <h2 class="section-title">A fully equipped production facility</h2>
         <p class="section-desc">Our shop floor runs CNC and EDM machines capable of micron-level accuracy. Detailed specifications available on request.</p>
       </div>
-      <div class="machinery-grid">
 
-        <!-- 1: VMC -->
-        <div class="machine-card">
-          <div class="machine-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="32" height="28" rx="3" stroke="currentColor" stroke-width="1.5"/><rect x="14" y="18" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="26" r="4" stroke="currentColor" stroke-width="1.5"/><line x1="24" y1="8" x2="24" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>VMC — Vertical Machining Centre</h4>
-          <p>High-precision CNC milling and contouring for complex tool and die profiles.</p>
+      <details class="machine">
+        <summary>
+          <h3>VMC (Vertical Machining Centre)</h3>
+          <span class="machine-desc">High-precision CNC milling and contouring for complex tool and die profiles.</span>
           <span class="machine-count">2 units</span>
-          <button class="spec-btn" onclick="openSpec('VMC — Vertical Machining Centre', 'Unit 1 — BMV-45\nSize: 450×650 mm | Make: BFW | Year: 2014\n\nUnit 2 — BMV-50\nSize: 510×850 mm | Make: BFW | Year: 2017')">View specs</button>
-        </div>
+          <span class="machine-toggle">View specs</span>
+        </summary>
+        <div class="spec-wrap"><table class="spec-table">
+          <thead><tr><th>Unit</th><th>Size</th><th>Make</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td>BMV-45</td><td>450×650 mm</td><td>BFW</td><td>2014</td></tr>
+            <tr><td>BMV-50</td><td>510×850 mm</td><td>BFW</td><td>2017</td></tr>
+          </tbody>
+        </table></div>
+      </details>
 
-        <!-- 2: Wire-Cut EDM Submerged -->
-        <div class="machine-card">
-          <div class="machine-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="6" y1="22" x2="42" y2="22" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="26" width="16" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="24" y1="6" x2="24" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>CNC Wire-Cut EDM — Submerged</h4>
-          <p>Submerged wire-cut EDM for superior surface finish on intricate die profiles.</p>
+      <details class="machine">
+        <summary>
+          <h3>CNC Wire-Cut EDM (Submerged)</h3>
+          <span class="machine-desc">Submerged wire-cut EDM for superior surface finish on intricate die profiles.</span>
           <span class="machine-count">1 unit</span>
-          <button class="spec-btn" onclick="openSpec('CNC Wire-Cut EDM — Submerged', 'Unit 1 — V400\nSize: 300×400 mm | Make: Excetech, Taiwan | Year: 2017')">View specs</button>
-        </div>
+          <span class="machine-toggle">View specs</span>
+        </summary>
+        <div class="spec-wrap"><table class="spec-table">
+          <thead><tr><th>Unit</th><th>Size</th><th>Make</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td>V400</td><td>300×400 mm</td><td>Excetech, Taiwan</td><td>2017</td></tr>
+          </tbody>
+        </table></div>
+      </details>
 
-        <!-- 3: Wire-Cut EDM Flush Type -->
-        <div class="machine-card">
-          <div class="machine-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="6" y1="22" x2="42" y2="22" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="26" width="16" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="24" y1="6" x2="24" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>CNC Wire-Cut EDM — Flush Type</h4>
-          <p>Flush-type wire EDM for high-speed, accurate cutting of press tool components.</p>
+      <details class="machine">
+        <summary>
+          <h3>CNC Wire-Cut EDM (Flush Type)</h3>
+          <span class="machine-desc">Flush-type wire EDM for high-speed, accurate cutting of press tool components.</span>
           <span class="machine-count">2 units</span>
-          <button class="spec-btn" onclick="openSpec('CNC Wire-Cut EDM — Flush Type', 'Unit 1 — Sprintcut\nSize: 300×400 mm | Make: Electronica | Year: 2004\n\nUnit 2 — Ultima\nSize: 300×500 mm | Make: Electronica | Year: 2010')">View specs</button>
-        </div>
+          <span class="machine-toggle">View specs</span>
+        </summary>
+        <div class="spec-wrap"><table class="spec-table">
+          <thead><tr><th>Unit</th><th>Size</th><th>Make</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td>Sprintcut</td><td>300×400 mm</td><td>Electronica</td><td>2004</td></tr>
+            <tr><td>Ultima</td><td>300×500 mm</td><td>Electronica</td><td>2010</td></tr>
+          </tbody>
+        </table></div>
+      </details>
 
-        <!-- 4: Wire-Cut EDM Reciprocating -->
-        <div class="machine-card">
-          <div class="machine-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="30" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="6" y1="22" x2="42" y2="22" stroke="currentColor" stroke-width="1.5"/><rect x="16" y="26" width="16" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="24" y1="6" x2="24" y2="10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>CNC Wire-Cut EDM — Reciprocating</h4>
-          <p>Reciprocating wire-cut machines for fast, efficient high-volume profile cutting.</p>
+      <details class="machine">
+        <summary>
+          <h3>CNC Wire-Cut EDM (Reciprocating)</h3>
+          <span class="machine-desc">Reciprocating wire-cut machines for fast, efficient high-volume profile cutting.</span>
           <span class="machine-count">2 units</span>
-          <button class="spec-btn" onclick="openSpec('CNC Wire-Cut EDM — Reciprocating', 'Unit 1 — #ER600\nSize: 350×450 mm | Make: Electronica | Year: 2022\n\nUnit 2 — #ER600\nSize: 350×450 mm | Make: Electronica | Year: 2024')">View specs</button>
-        </div>
+          <span class="machine-toggle">View specs</span>
+        </summary>
+        <div class="spec-wrap"><table class="spec-table">
+          <thead><tr><th>Unit</th><th>Size</th><th>Make</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td>#ER600</td><td>350×450 mm</td><td>Electronica</td><td>2022</td></tr>
+            <tr><td>#ER600</td><td>350×450 mm</td><td>Electronica</td><td>2024</td></tr>
+          </tbody>
+        </table></div>
+      </details>
 
-        <!-- 5: Surface Grinding -->
-        <div class="machine-card">
-          <div class="machine-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="16" width="28" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="10" y1="24" x2="38" y2="24" stroke="currentColor" stroke-width="1"/><rect x="18" y="8" width="12" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="24" y1="36" x2="24" y2="42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h4>Surface Grinding M/c</h4>
-          <p>Precision surface grinding for tight flatness and smooth finishes on die plates.</p>
+      <details class="machine">
+        <summary>
+          <h3>Surface Grinding M/c</h3>
+          <span class="machine-desc">Precision surface grinding for tight flatness and smooth finishes on die plates.</span>
           <span class="machine-count">2 units</span>
-          <button class="spec-btn" onclick="openSpec('Surface Grinding M/c', 'Unit 1\nSize: 175×450 mm | Make: Brown &amp; Sharpe\n\nUnit 2\nSize: 300×600 mm | Make: Proth, Taiwan | Year: 2019')">View specs</button>
-        </div>
+          <span class="machine-toggle">View specs</span>
+        </summary>
+        <div class="spec-wrap"><table class="spec-table">
+          <thead><tr><th>Unit</th><th>Size</th><th>Make</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td>Unit 1</td><td>175×450 mm</td><td>Brown &amp; Sharpe</td><td>—</td></tr>
+            <tr><td>Unit 2</td><td>300×600 mm</td><td>Proth, Taiwan</td><td>2019</td></tr>
+          </tbody>
+        </table></div>
+      </details>
 
-        <!-- 6: DRO Milling + Drilling -->
-        <div class="machine-card">
-          <div class="machine-icon">
-            <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="14" width="32" height="22" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M16 26 L24 20 L32 26" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="24" y1="20" x2="24" y2="36" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-          </div>
-          <h4>DRO Milling & Drilling M/c</h4>
-          <p>Digital-readout milling and precision drilling for supporting machining operations.</p>
+      <details class="machine">
+        <summary>
+          <h3>DRO Milling &amp; Drilling M/c</h3>
+          <span class="machine-desc">Digital-readout milling and precision drilling for supporting machining operations.</span>
           <span class="machine-count">2 units</span>
-          <button class="spec-btn" onclick="openSpec('DRO Milling & Drilling M/c', 'Unit 1 — DRO Milling Machine\nSize: 254×1371 mm (Travel: 320×850 mm) | Make: Pacmill | Year: 2009\n\nUnit 2 — Drilling M/c\nSize: Dia 25.4 mm | Make: Vijay')">View specs</button>
-        </div>
+          <span class="machine-toggle">View specs</span>
+        </summary>
+        <div class="spec-wrap"><table class="spec-table">
+          <thead><tr><th>Unit</th><th>Size</th><th>Make</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td>DRO Milling Machine</td><td>254×1371 mm (travel 320×850 mm)</td><td>Pacmill</td><td>2009</td></tr>
+            <tr><td>Drilling M/c</td><td>Dia 25.4 mm</td><td>Vijay</td><td>—</td></tr>
+          </tbody>
+        </table></div>
+      </details>
 
-        <!-- 7: Spark EDM -->
-        <div class="machine-card">
-          <div class="machine-icon">
-            <svg viewBox="0 0 48 48" fill="none"><path d="M28 8l-12 16h10l-6 16 14-20H24z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h4>Spark EDM Machine</h4>
-          <p>Die-sinking EDM for complex cavities, deep profiles, and automated cavity sinking.</p>
+      <details class="machine">
+        <summary>
+          <h3>Spark EDM Machine</h3>
+          <span class="machine-desc">Die-sinking EDM for complex cavities, deep profiles, and automated cavity sinking.</span>
           <span class="machine-count">3 units</span>
-          <button class="spec-btn" onclick="openSpec('Spark EDM Machine', 'Unit 1 — M1\nSize: 300×500 mm | Make: Electronica | Year: 2012\n\nUnit 2 — M2\nSize: 300×500 mm | Make: Electronica | Year: 2014\n\nUnit 3 — ZNC\nSize: 350×550 mm | Make: Electronica | Year: 2013')">View specs</button>
-        </div>
-
-      </div>
+          <span class="machine-toggle">View specs</span>
+        </summary>
+        <div class="spec-wrap"><table class="spec-table">
+          <thead><tr><th>Unit</th><th>Size</th><th>Make</th><th>Year</th></tr></thead>
+          <tbody>
+            <tr><td>M1</td><td>300×500 mm</td><td>Electronica</td><td>2012</td></tr>
+            <tr><td>M2</td><td>300×500 mm</td><td>Electronica</td><td>2014</td></tr>
+            <tr><td>ZNC</td><td>350×550 mm</td><td>Electronica</td><td>2013</td></tr>
+          </tbody>
+        </table></div>
+      </details>
     </div>
   </section>
 
@@ -291,50 +270,52 @@
     <div class="container">
       <div class="certs-layout">
         <div class="certs-left">
-          <span class="section-tag">Quality assurance</span>
-          <h2 class="section-title">Certified quality,<br>trusted by industry</h2>
-          <p>Our processes meet the standards expected by leading manufacturers. Every component leaves our facility inspected and documented.</p>
-          <div class="cert-badges">
-            <div class="cert-badge">
-              <img src="assets/logo-iso.png" alt="EICPL EGAC QMS Certification Logo" class="cert-logo" />
-              <div>
-                <strong>ISO 9001:2015 — Quality Management System</strong>
-                <span>Our quality management system is certified by EICPL, accredited by EGAC (CAB #118007)</span>
-                <span class="cert-meta">Scope: Press tools, dies, moulds, jigs, fixtures & precision components</span>
-                <span class="cert-meta">Issued: July 2026</span>
-              </div>
+          <h2 class="section-title">Certified quality, trusted by industry</h2>
+          <p>Our quality management system is certified to ISO 9001:2015, and we hold ZED Silver certification under the MSME Sustainable (ZED) Certification Scheme.</p>
+
+          <div class="cert cert--stack">
+            <div>
+              <strong>ISO 9001:2015 Quality Management System</strong>
+              <span>Our quality management system is certified by EICPL, accredited by EGAC (CAB #118007).</span>
+              <!-- Add your EICPL Client ID here, e.g. <span class="cert-meta">EICPL Client ID: XXXX</span> -->
+              <span class="cert-meta">Scope: Press tools, dies, moulds, jigs, fixtures &amp; precision components</span>
+              <span class="cert-meta">Issued: July 2026</span>
             </div>
-            <div class="cert-badge">
-              <img src="assets/zed-badge.png" alt="ZED Silver Certification" class="cert-logo" />
-              <div>
-                <strong>ZED Silver Certified</strong>
-                <span>MSME Sustainable (ZED) Certification Scheme</span>
-                <span class="cert-meta">Issued: March 26, 2026 · Valid 3 years</span>
-                <span class="cert-meta">Udyam: UDYAM-MH-23-0000525</span>
-              </div>
+            <img src="assets/logo-iso.png" alt="EICPL, EGAC accredited QMS certification (CAB #118007) and IAF multilateral recognition arrangement marks" class="cert-logo cert-logo--wide" loading="lazy" decoding="async" />
+          </div>
+
+          <div class="cert">
+            <img src="assets/zed-badge.png" alt="ZED Silver Certification" class="cert-logo" loading="lazy" decoding="async" />
+            <div>
+              <strong>ZED Silver Certified</strong>
+              <span>MSME Sustainable (ZED) Certification Scheme</span>
+              <span class="cert-meta">Issued: March 26, 2026 · Valid 3 years</span>
+              <span class="cert-meta">Udyam: UDYAM-MH-23-0000525</span>
             </div>
-            <div class="cert-badge">
-              <img src="assets/logo-msme.png" alt="MSME Logo" class="cert-logo" />
-              <div>
-                <strong>Udyam Registration Certificate — Micro</strong>
-                <span>Ministry of Micro, Small and Medium Enterprises, Government of India</span>
-                <span class="cert-meta">Udyam No: UDYAM-MH-23-0000525</span>
-                <span class="cert-meta">Issued: July 2020</span>
-              </div>
+          </div>
+
+          <div class="cert">
+            <img src="assets/logo-msme.png" alt="MSME logo" class="cert-logo" loading="lazy" decoding="async" />
+            <div>
+              <strong>Udyam Registration Certificate (Micro)</strong>
+              <span>Ministry of Micro, Small and Medium Enterprises, Government of India</span>
+              <span class="cert-meta">Udyam No: UDYAM-MH-23-0000525</span>
+              <span class="cert-meta">Issued: July 2020</span>
             </div>
           </div>
         </div>
+
         <div class="certs-right">
-          <span class="trusted-label">Trusted by</span>
+          <h3 class="sub-title">Trusted by</h3>
           <div class="trusted-grid">
-            <div class="trusted-slot"><img src="assets/logo-technocraft.png" alt="Technocraft Industries (India) Ltd." /></div>
-            <div class="trusted-slot"><img src="assets/logo-koso.png" alt="Koso India Pvt. Ltd." /></div>
-            <div class="trusted-slot"><img src="assets/logo-kimplas.png" alt="Kimplas Piping Systems Ltd." /></div>
-            <div class="trusted-slot"><img src="assets/logo-rishabh.png" alt="Rishabh Instruments Ltd." /></div>
-            <div class="trusted-slot"><img src="assets/logo-zenith.png" alt="Zenith Metaplast Pvt. Ltd." /></div>
-            <div class="trusted-slot"><img src="assets/logo-virtuoso.png" alt="Virtuoso Optoelectronics Pvt. Ltd." /></div>
-            <div class="trusted-slot"><img src="assets/logo-gayatri.png" alt="Gayatri Tooling Services" /></div>
-            <div class="trusted-slot"><img src="assets/logo-electrocrimp.png" alt="Electro Crimp Contacts (India) Pvt. Ltd." /></div>
+            <div class="trusted-slot"><img src="assets/logo-technocraft.png" alt="Technocraft Industries (India) Ltd." loading="lazy" decoding="async" /></div>
+            <div class="trusted-slot"><img src="assets/logo-koso.png" alt="Koso India Pvt. Ltd." loading="lazy" decoding="async" /></div>
+            <div class="trusted-slot"><img src="assets/logo-kimplas.png" alt="Kimplas Piping Systems Ltd." loading="lazy" decoding="async" /></div>
+            <div class="trusted-slot"><img src="assets/logo-rishabh.png" alt="Rishabh Instruments Ltd." loading="lazy" decoding="async" /></div>
+            <div class="trusted-slot"><img src="assets/logo-zenith.png" alt="Zenith Metaplast Pvt. Ltd." loading="lazy" decoding="async" /></div>
+            <div class="trusted-slot"><img src="assets/logo-virtuoso.png" alt="Virtuoso Optoelectronics Pvt. Ltd." loading="lazy" decoding="async" /></div>
+            <div class="trusted-slot"><img src="assets/logo-gayatri.png" alt="Gayatri Tooling Services" loading="lazy" decoding="async" /></div>
+            <div class="trusted-slot"><img src="assets/logo-electrocrimp.png" alt="Electro Crimp Contacts (India) Pvt. Ltd." loading="lazy" decoding="async" /></div>
           </div>
         </div>
       </div>
@@ -345,14 +326,11 @@
   <section class="section contact" id="contact">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Contact</span>
         <h2 class="section-title">Let's talk about your requirement</h2>
       </div>
       <div class="contact-details">
         <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div>
             <strong>Phone</strong>
             <a href="tel:02532992978">0253-2992978</a>
@@ -360,69 +338,50 @@
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div>
             <strong>Email</strong>
             <a href="mailto:sprintecheng@gmail.com">sprintecheng@gmail.com</a>
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3" stroke="#C8392B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div>
             <strong>Address</strong>
             <span>F-3, C/1, Kartikeya Industrial Premises,<br>MIDC Ambad, Nashik – 422010</span>
           </div>
         </div>
         <div class="contact-item">
-          <div class="contact-icon">
-            <svg viewBox="0 0 24 24" fill="#C8392B"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          </div>
+          <svg class="contact-icon" viewBox="0 0 24 24" fill="#C8392B" aria-hidden="true"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
           <div>
             <strong>LinkedIn</strong>
             <a href="https://www.linkedin.com/in/sprintech-engineering" target="_blank" rel="noopener">linkedin.com/in/sprintech-engineering</a>
           </div>
         </div>
-        <div class="contact-item contact-item--map">
-          <a href="https://maps.app.goo.gl/QauG6CctHRHi78Bv7" target="_blank" rel="noopener" class="btn btn-primary map-btn">Open in Google Maps</a>
-        </div>
       </div>
+      <p class="contact-map"><a href="https://maps.app.goo.gl/QauG6CctHRHi78Bv7" target="_blank" rel="noopener" class="btn btn-primary">Open in Google Maps</a></p>
     </div>
   </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
         <img src="assets/logo-footer.png" alt="Sprintech Engineering" class="footer-logo" />
-        <p>Precision press tools, dies & injection moulds<br><em style="color:var(--red);font-style:normal;">Towards Certainty…</em><br>MIDC Ambad, Nashik – 422010.</p>
+        <p>Precision press tools, dies &amp; injection moulds<br><span class="footer-tagline">Towards Certainty…</span><br>MIDC Ambad, Nashik – 422010</p>
       </div>
-      <div class="footer-links">
+      <nav class="footer-links" aria-label="Footer">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#machinery">Machinery</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
-        <a href="https://www.linkedin.com/in/sprintech-engineering" target="_blank" rel="noopener" class="footer-linkedin">
-          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" style="vertical-align:middle;margin-right:5px"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-          LinkedIn
-        </a>
-      </div>
+      </nav>
       <p class="footer-copy">© 2026 Sprintech Engineering. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- SPEC MODAL -->
-  <div class="modal-overlay" id="modalOverlay" onclick="closeSpec()">
-    <div class="modal" onclick="event.stopPropagation()">
-      <button class="modal-close" onclick="closeSpec()">✕</button>
-      <h3 id="modalTitle"></h3>
-      <p id="modalBody"></p>
-    </div>
-  </div>
 
   <script src="main.js"></script>
 </body>
